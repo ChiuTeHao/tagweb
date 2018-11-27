@@ -9,9 +9,9 @@ from bottle import run, response, request, static_file
 import bottle.ext.sqlite
 
 from set_query import Bm25_query
-from sa import Sa_aip
+###from sa import Sa_aip
 
-HOST = '140.112.31.144' # IRlab
+HOST = '140.112.31.149' # IRlab
 PORT = 5005
 
 WANT_CNT = 30
@@ -382,15 +382,15 @@ if __name__ == '__main__':
     dev = True
     if dev:
         file_list = {
-            'contents':  '../../../data/dev/sample_content.json',
-            'bm_system': '../../../data/dev/union_sample_bm25_system.json',
+            'contents':  '../data/dev/sample_content.json',
+            'bm_system': '../data/dev/union_sample_bm25_system.json',
         }
     else:
         file_list = {
             'contents':  '../../../data/contents/appledaily_contents.json',
             'bm_system': '../../../data/bm25_system/union_appledaily_bm25_system.json',
         }
-    topic_set_json = '../../../data/topic.json'
+    topic_set_json = '../data/topic.json'
 
     with open(topic_set_json) as infile:
         topic_set_list = json.load(infile)

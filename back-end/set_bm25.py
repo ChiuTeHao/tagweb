@@ -11,7 +11,7 @@ import json
 import jieba
 from tqdm import tqdm
 jieba.dt.cache_file = 'jieba.cache.new'
-jieba.load_userdict('../../../data/userdict.txt')
+jieba.load_userdict('../data/userdict.txt')
 
 from typing import List, Set
 

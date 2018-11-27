@@ -5,7 +5,7 @@ from typing import List
 
 import jieba
 jieba.dt.cache_file = 'jieba.cache.new'
-jieba.load_userdict('../../../data/userdict.txt')
+jieba.load_userdict('../data/userdict.txt')
 from set_bm25 import BM25  #if you want to unpickle a object, but the class definition is at other file, you should import this!
 
 class Bm25_query:
