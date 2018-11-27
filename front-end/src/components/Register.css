@@ -1,0 +1,27 @@
+#register {
+  text-align: center;
+  width: 35em;
+}
+
+#register form div {
+  margin: 0.5em 0;
+}
+
+#register button {
+  margin: 0 1em;
+}
+
+#register .success,
+#register .fail {
+  display: inline-block;
+  margin: 0;
+  color: white;
+}
+
+#register .success {
+  background-color: green;
+}
+
+#register .fail {
+  background-color: red;
+}

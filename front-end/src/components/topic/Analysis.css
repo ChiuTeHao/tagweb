@@ -1,0 +1,50 @@
+/*
+ * TopicCut
+ */
+
+#attr.card {
+  width: 35em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#attr .text {
+  font-size: 0.9em;
+  color: #666;
+}
+
+#topic-seg {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+#topic-seg .label {
+  font-size: 0.9em;
+  color: #666;
+}
+
+#topic-seg .query-segs {
+  border: 1px solid lightgrey;
+  padding: 2px;
+}
+
+#topic-seg .query-segs:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+}
+
+#topic-seg .query-segs button {
+  margin: 4px 2px;
+  border: 1px solid rgb(192, 192, 192);
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+
+#topic-seg button:hover ,
+#topic-seg button:active {
+  cursor: text;
+}
+
+

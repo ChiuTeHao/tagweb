@@ -1,0 +1,95 @@
+/* card */
+
+.card {
+  margin: 2em auto;
+  padding: 1em;
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px grey;
+}
+
+/* button */
+
+.button,
+button {
+  padding: 0.5em 1em;
+  border-width: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px grey;
+  background-color: #eee;
+
+  transition: background-color 0.3s;
+}
+
+button:hover:not([disabled]) {
+  cursor: pointer;
+
+  background-color: #ddd;
+}
+
+button[disabled]:hover {
+  cursor: not-allowed;
+}
+
+button:active:not([disabled]) {
+  background-color: #bbb;
+}
+
+/* input, select */
+
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+  margin: 8px;
+  padding: 5px 0.5em;
+
+  font-size: 1em;
+  text-align: center;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  border: none;
+  outline: none;
+
+  box-shadow: 0 1px #aaa;
+
+  transition: box-shadow 0.1s;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):hover,
+input:not([type="checkbox"]):not([type="radio"]):focus {
+  box-shadow: 0 2px #666;
+}
+
+/* radio */
+
+input[type="radio"]{
+}
+
+/* table */
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #ccc;
+  border-width: 1px 0 0 0;
+}
+
+thead tr:nth-child(odd) {
+  background-color: #DDD;
+}
+
+tr:nth-child(odd) {
+  background-color: #F7F7F7;
+}
+
+th,
+td {
+  padding: 1em 0.5em;
+}
+
+th {
+  color: #444;
+}

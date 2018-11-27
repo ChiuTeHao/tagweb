@@ -1,0 +1,36 @@
+#searchBar {
+  margin: 1em;
+}
+
+#searchBar form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 35em;
+}
+
+/* #searchBar div { */
+/*   padding: 0 1em; */
+/* } */
+
+#searchBar label {
+  display: inline-block;
+  flex: 1;
+
+  margin: 0.5em;
+  text-align: right;
+
+  font-size: 0.9em;
+}
+
+/* input, select */
+
+#searchBar input {
+  width: 25em;
+}
+
+#searchBar select {
+  max-width: 20em;
+}

@@ -1,0 +1,43 @@
+#pageList {
+  width: 35em;
+  margin: 2em auto;
+}
+
+/* goto */
+
+#pageList .goto {
+  margin: 0 0 1em 0;
+  text-align: center;
+
+  font-size: 0.9em;
+  color: #666;
+}
+
+#pageList .goto input {
+  width: 8em;
+}
+
+/* ul */
+
+#pageList ul.pageList {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+#pageList .active {
+  background-color: white;
+  box-shadow: none;
+}
+
+#pageList .active:hover ,
+#pageList .active:active {
+  cursor: default;
+  background-color: white;
+  box-shadow: none;
+}

@@ -1,0 +1,212 @@
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 1em;
+
+  font-size: 0.9em;
+}
+
+#content:hover {
+  /* cursor: pointer; */
+}
+
+#content .inside {
+  margin-left: 5em;
+  margin-right: 1em;
+  padding: 2em;
+  height: 85%;
+  /* width: 80%; */
+  max-width: 50em;
+
+  overflow: auto;
+}
+
+#content .inside-2 {
+  min-width: 25em;
+  /* max-width: 50em; */
+  margin-right: 5em;
+  text-align: center;
+}
+
+#content .inside-2:hover,
+#content .inside:hover {
+  cursor: auto;
+}
+
+#content div {
+  margin: 1em 0;
+}
+
+#content .score {
+  display: flex;
+  justify-content: center;
+}
+
+#content .inside-score {
+  margin: 0 1em;
+}
+
+#content .score .score-num {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#content h2 {
+  font-size: 1.3em;
+}
+
+#content h2,
+#content .author,
+#content .url,
+#content .url a {
+  color: black;
+  text-align: center;
+}
+
+#content .title {
+  padding-top: 0.5em;
+  border: 1px solid grey;
+  border-width: 1px 0 0 0;
+
+  color: #666;
+}
+
+#content .url a {
+  text-decoration: none;
+}
+
+#content .url a:hover {
+  text-decoration: underline;
+}
+
+#content .content {
+  border: 1px solid grey;
+  border-width: 1px 0 0 0;
+  padding-bottom: 1em;
+}
+
+#content p {
+  line-height: 2em;
+}
+
+#content .highlight-text {
+  background-color: #ffff72;
+}
+
+/* Label */
+
+#content #prev-label,
+#content #label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+#content #prev-label {
+  padding-bottom: 2em;
+}
+
+#prev-label div,
+#label div {
+  margin: 1em;
+}
+
+#label .radio {
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  margin: 0 2px;
+  border-radius: 5px;
+  background-color: #fff;
+
+  transition: background-color 0.3s;
+}
+
+#label .radio:hover {
+  background-color: #eee;
+}
+
+#label .radio.active,
+#label .radio:active {
+  background-color: #ddd;
+  /* font-weight: bold; */
+}
+
+#label button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 1em;
+  padding: 0.5em;
+}
+
+#label button span {
+  margin-right: 0.2em;
+}
+
+#prev-label .score-num {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#content-prev,
+#content-next {
+  position: fixed;
+  width: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  font-size: 3em;
+  color: white;
+
+  transition: background-color 0.3s;
+}
+
+#content #content-prev,
+#content #content-next {
+  margin: 0;
+}
+
+#content-prev {
+  left: 0;
+}
+
+#content-next {
+  right: 0;
+}
+
+#content-prev:hover,
+#content-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+#content-prev:active,
+#content-next:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content-prev p,
+#content-next p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5em;
+}

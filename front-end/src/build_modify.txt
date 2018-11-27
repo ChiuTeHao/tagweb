@@ -1,0 +1,5 @@
+- App.js:
+    - import SearchBar from './components/${*****}/SearchBar.js'
+
+- ResultList.js:
+    - import Analysis from './label/Analysis.js'

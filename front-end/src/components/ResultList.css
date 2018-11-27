@@ -1,0 +1,132 @@
+/*
+ * result
+ */
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result .card {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+ * filter
+ */
+
+#filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+#filter p {
+  margin-right: 0.5em;
+
+  font-size: 0.9em;
+  color: #666;
+}
+
+#filter div {
+  padding: 0.5em;
+
+  transition: background-color 0.3s, font-weight 0.3s;
+}
+
+#filter div.active {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+/*
+ * resultList
+ */
+
+#resultList {
+  overflow-x: auto;
+  text-align: center;
+}
+
+#resultList .highlight-text {
+  background-color: #ffff72;
+}
+
+#resultList table {
+  border-collapse: collapse;
+}
+
+/* #resultList tr */
+
+#resultList tr {
+  border: 1px solid #ccc;
+  border-width: 1px 0 0 0;
+}
+
+#resultList thead tr:nth-child(odd) {
+  background-color: #DDD;
+}
+
+#resultList tr:nth-child(odd) {
+  background-color: #F7F7F7;
+}
+
+/* #resultList th + td */
+
+#resultList th,
+#resultList td {
+  padding: 1em 0.5em;
+}
+
+#resultList .rank {
+  padding: 1em 0.5em;
+  min-width: 2em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+/* #resultList th */
+
+#resultList th {
+  color: #444;
+}
+
+/* #resultList td */
+
+#resultList td.date,
+#resultList td.author {
+  color: #888;
+}
+
+#resultList td.author {
+  width: 4em;
+}
+
+#resultList td.score {
+  color: #444;
+}
+
+#resultList td.title {
+  text-align: left;
+}
+
+#resultList tr:last-child>td.senti {
+  border-bottom-right-radius: 5px;
+}
+
+/* #resultList a */
+
+#resultList a {
+  color: #444;
+  text-decoration: none;
+}
+
+#resultList a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+body {
+  background-color: #FAFAFA;
+}
+
+.blank {
+  height: 3.5em;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Sample Query */
+
+#sample-query.card {
+  width: 25em;
+}
+
+#sample-query h1 {
+  margin: 1em 0;
+  text-align: center;
+
+  font-size: 1.5em;
+  /* font-weight: normal; */
+  color: #666;
+}
+
+#sample-query table {
+  border: 1px solid #ccc;
+}
+
+#sample-query table th,
+#sample-query table td {
+  text-align: center;
+  color: rgb(64, 64, 64);
+}
+
+/* About */
+
+#about.card {
+  width: 25em;
+}
+
+#about h1 {
+  margin: 1em 0;
+  text-align: center;
+
+  font-size: 1.5em;
+  /* font-weight: normal; */
+  color: #666;
+}
+
+#about h2 {
+  margin: 1.5em 0;
+
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #666;
+}
+
+#about ul {
+  /* list-style: none; */
+}
+
+#about li {
+  margin: 1em 0;
+}
