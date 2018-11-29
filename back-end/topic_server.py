@@ -18,7 +18,7 @@ WANT_CNT = 30
 
 # DB
 
-DBFILE = '../../../data/dbfile/dev.db'
+DBFILE = '../data/dbfile/dev.db'
 app = bottle.Bottle()
 plugin = bottle.ext.sqlite.Plugin(dbfile=DBFILE)
 app.install(plugin)
@@ -95,7 +95,7 @@ def process(db):
     for row in rows:
         topic_list += [{
             'topic': row['topic'],
-            'queryText': row['query_text'],
+            #'queryText': row['query_text'],
         }]
 
     response.content_type = 'application/json'
@@ -373,8 +373,8 @@ def process(db):
 @app.get('/')
 @app.get('/<path:path>')
 def callback(path='index.html'):
-    return static_file(path, ('/home/guest/b04902053/desktop'
-                              '/front-end/set_dev/build'))
+    return static_file(path, ('~/桌面'
+                              '/front-end/build'))
 
 # MAIN
 
